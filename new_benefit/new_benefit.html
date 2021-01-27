@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <title>New Premium</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./new_benefit.css">
+</header>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#new_premiums">Click</button>
+        </div>
+    </div>
+    <div class="modal fade" id="new_premiums">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header py-2">
+                    <h5 class="modal-title">New Premiums</h5>
+                    <button class="close" type="button" data-dismiss="modal"></button>&times;</button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="info p-2 mb-0">
+                        <span class="badge badge-pill badge-light"><i
+                                class="fa fa-info text-primary"></i></span>&nbsp;&nbsp;
+                        <span>All the records have their start age defaulted to 31.</span>
+                    </div>
+                    <div class="px-2">
+                        <table class="table table-responsive">
+                            <thead>
+                                <th width = "25%">Payout Amount</th>
+                                <th width = "20%">Payment Mode/Account</th>
+                                <th width = "20%">Frequency</th>
+                                <th width = "20%">Payout Age</th>
+                                <th width = "15%">
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" value="">Auto Payout
+                                        </label>
+                                    </div>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="number" name="payoutAmount" class="form-control"></td>
+                                    <td><select class="form-control" name="account">
+                                            <option value="cash">Cash</option>
+                                            <option value="cpf">CPF</option>
+                                            <option value="srs">SRS</option>
+                                        </select></td>
+                                    <td><select class="form-control" name="frequency">
+                                            <option value="oneTime">One Time</option>
+                                            <option value="monthly">Monthly</option>
+                                            <option value="quarterly">Quarterly</option>
+                                            <option value="semi">Semi-annually</option>
+                                            <option value="annually">Annually</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" name="payoutAge">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="form-check-input ml-3" name="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" name="payoutAmount" class="form-control"></td>
+                                    <td><select class="form-control" name="account">
+                                            <option value="cash">Cash</option>
+                                            <option value="cpf">CPF</option>
+                                            <option value="srs">SRS</option>
+                                        </select></td>
+                                    <td><select class="form-control" name="frequency">
+                                            <option value="oneTime">One Time</option>
+                                            <option value="monthly">Monthly</option>
+                                            <option value="quarterly">Quarterly</option>
+                                            <option value="semi">Semi-annually</option>
+                                            <option value="annually">Annually</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" name="payoutAge">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="form-check-input ml-3" name="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" name="payoutAmount" class="form-control"></td>
+                                    <td><select class="form-control" name="account">
+                                            <option value="cash">Cash</option>
+                                            <option value="cpf">CPF</option>
+                                            <option value="srs">SRS</option>
+                                        </select></td>
+                                    <td><select class="form-control" name="frequency">
+                                            <option value="oneTime">One Time</option>
+                                            <option value="monthly">Monthly</option>
+                                            <option value="quarterly">Quarterly</option>
+                                            <option value="semi">Semi-annually</option>
+                                            <option value="annually">Annually</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" name="payoutAge">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="form-check-input ml-3" name="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" name="payoutAmount" class="form-control"></td>
+                                    <td><select class="form-control" name="account">
+                                            <option value="cash">Cash</option>
+                                            <option value="cpf">CPF</option>
+                                            <option value="srs">SRS</option>
+                                        </select></td>
+                                    <td><select class="form-control" name="frequency">
+                                            <option value="oneTime">One Time</option>
+                                            <option value="monthly">Monthly</option>
+                                            <option value="quarterly">Quarterly</option>
+                                            <option value="semi">Semi-annually</option>
+                                            <option value="annually">Annually</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" name="payoutAge">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="form-check-input ml-3" name="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" name="payoutAmount" class="form-control"></td>
+                                    <td><select class="form-control" name="account">
+                                            <option value="cash">Cash</option>
+                                            <option value="cpf">CPF</option>
+                                            <option value="srs">SRS</option>
+                                        </select></td>
+                                    <td><select class="form-control" name="frequency">
+                                            <option value="oneTime">One Time</option>
+                                            <option value="monthly">Monthly</option>
+                                            <option value="quarterly">Quarterly</option>
+                                            <option value="semi">Semi-annually</option>
+                                            <option value="annually">Annually</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" name="payoutAge">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="form-check-input ml-3" name="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" name="payoutAmount" class="form-control"></td>
+                                    <td><select class="form-control" name="account">
+                                            <option value="cash">Cash</option>
+                                            <option value="cpf">CPF</option>
+                                            <option value="srs">SRS</option>
+                                        </select></td>
+                                    <td><select class="form-control" name="frequency">
+                                            <option value="oneTime">One Time</option>
+                                            <option value="monthly">Monthly</option>
+                                            <option value="quarterly">Quarterly</option>
+                                            <option value="semi">Semi-annually</option>
+                                            <option value="annually">Annually</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" name="payoutAge">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="form-check-input ml-3" name="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" name="payoutAmount" class="form-control"></td>
+                                    <td><select class="form-control" name="account">
+                                            <option value="cash">Cash</option>
+                                            <option value="cpf">CPF</option>
+                                            <option value="srs">SRS</option>
+                                        </select></td>
+                                    <td><select class="form-control" name="frequency">
+                                            <option value="oneTime">One Time</option>
+                                            <option value="monthly">Monthly</option>
+                                            <option value="quarterly">Quarterly</option>
+                                            <option value="semi">Semi-annually</option>
+                                            <option value="annually">Annually</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" name="payoutAge">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="form-check-input ml-3" name="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" name="payoutAmount" class="form-control"></td>
+                                    <td><select class="form-control" name="account">
+                                            <option value="cash">Cash</option>
+                                            <option value="cpf">CPF</option>
+                                            <option value="srs">SRS</option>
+                                        </select></td>
+                                    <td><select class="form-control" name="frequency">
+                                            <option value="oneTime">One Time</option>
+                                            <option value="monthly">Monthly</option>
+                                            <option value="quarterly">Quarterly</option>
+                                            <option value="semi">Semi-annually</option>
+                                            <option value="annually">Annually</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" name="payoutAge">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="form-check-input ml-3" name="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" name="payoutAmount" class="form-control"></td>
+                                    <td><select class="form-control" name="account">
+                                            <option value="cash">Cash</option>
+                                            <option value="cpf">CPF</option>
+                                            <option value="srs">SRS</option>
+                                        </select></td>
+                                    <td><select class="form-control" name="frequency">
+                                            <option value="oneTime">One Time</option>
+                                            <option value="monthly">Monthly</option>
+                                            <option value="quarterly">Quarterly</option>
+                                            <option value="semi">Semi-annually</option>
+                                            <option value="annually">Annually</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" name="payoutAge">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="form-check-input ml-3" name="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" name="payoutAmount" class="form-control"></td>
+                                    <td><select class="form-control" name="account">
+                                            <option value="cash">Cash</option>
+                                            <option value="cpf">CPF</option>
+                                            <option value="srs">SRS</option>
+                                        </select></td>
+                                    <td><select class="form-control" name="frequency">
+                                            <option value="oneTime">One Time</option>
+                                            <option value="monthly">Monthly</option>
+                                            <option value="quarterly">Quarterly</option>
+                                            <option value="semi">Semi-annually</option>
+                                            <option value="annually">Annually</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" name="payoutAge">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="form-check-input ml-3" name="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" name="payoutAmount" class="form-control"></td>
+                                    <td><select class="form-control" name="account">
+                                            <option value="cash">Cash</option>
+                                            <option value="cpf">CPF</option>
+                                            <option value="srs">SRS</option>
+                                        </select></td>
+                                    <td><select class="form-control" name="frequency">
+                                            <option value="oneTime">One Time</option>
+                                            <option value="monthly">Monthly</option>
+                                            <option value="quarterly">Quarterly</option>
+                                            <option value="semi">Semi-annually</option>
+                                            <option value="annually">Annually</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" name="payoutAge">
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" class="form-check-input ml-3" name="">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+
+                    <a href="javascript: void(0)"><i class="fa fa-desktop"></i>&nbsp;&nbsp;Guide Me</a>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-secondary btn-sm mx-1">Cancel</button>
+                        <button type="button" class="btn btn-primary btn-sm mx-1">Save Premium</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

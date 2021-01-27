@@ -1,0 +1,170 @@
+body{
+    background: #eee;
+}
+.content{
+    background: white
+}
+.title{
+    background: rgb(229, 243, 248);
+    box-shadow: 0 3px 10px rgb(229, 243, 248);
+}
+.badge-light{
+    border: 1px solid #007bff;
+}
+.badge-light .fa-info{
+    font-size: 10px !important;
+}
+.b-0{
+    border: none !important;
+    height: 100%;
+}
+:focus{
+    outline: none !important;
+}
+#assured .close{
+    float: none !important;
+}
+#assured .badge-light{
+    border: 1px solid #ddd;
+}
+#assured .close{
+    font-size: 14px;
+}
+.caret{
+    position: absolute;
+    top: 6px;
+    right: 10px;
+}
+label{
+    color:gray;
+}
+
+.google {
+    background-color: #fff;
+}
+
+.input-group-prepend {
+    margin-right: -2px !important;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #ced4da;
+    outline: 0;
+    box-shadow: 0 0 0 0 !important
+}
+.bl-none{
+    border-left: none !important
+}
+
+.datepicker td, .datepicker th {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 0.85rem;
+}
+
+.datepicker {
+    margin-bottom: 3rem;
+}
+
+.datepicker-dropdown {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}.nav.nav-tabs.nav-underline {
+    background: #FFF;
+    position: relative;
+    border-bottom: 1px solid #2DCEE3;
+}
+.nav.nav-tabs.nav-underline .nav-item {
+    position: relative;
+    z-index: 1;
+    display: block;
+    text-align: center;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+    margin-right: 0;
+}
+.nav.nav-tabs.nav-underline .nav-item a.nav-link.active {
+    border: none;
+    background-color: transparent;
+}
+
+.nav.nav-tabs.nav-underline .nav-item a.nav-link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* line-height: 2.5; */
+    padding: .5rem 1rem;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+    color: #2DCEE3;
+    border: none;
+}
+.nav.nav-tabs .nav-item .nav-link.active {
+    background-color: #FFF;
+    border-radius: .25rem .25rem 0 0;
+}
+.nav.nav-tabs.nav-underline .nav-item a.nav-link.active:before {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.nav.nav-tabs.nav-underline .nav-item a.nav-link:before {
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    width: 100%;
+    height: 5px;
+    background: #2DCEE3;
+    content: '';
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s,-webkit-transform .3s;
+    -webkit-transform: translate3d(0,150%,0);
+    transform: translate3d(0,150%,0);
+}
+.table tfoot{
+    border-bottom: 1px solid gray;
+}
+.table th, .table td{
+    color: gray ;
+    font-size: 12px !important;
+}
+.more{
+    position: absolute;
+    right: 25px;
+}
+.modal-header {
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+button.close {
+    color: white !important;
+}
+.info {
+    background-color: lightblue !important;
+}
+
+.modal-dialog {
+    width: 80% !important;
+}
+table th {
+    font-size: smaller !important;
+    text-align: center !important;
+}
+table td {
+    font-size: smaller !important;
+}
+table {
+    border-top: none !important;
+}
+.new:hover{
+    cursor: pointer;
+    color: #2DCEE3
+}

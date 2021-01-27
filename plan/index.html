@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title> Plan </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</header>
+
+<body>
+    <div class="row">
+        <div class="col-md-2 col-0"></div>
+        <div class="col-md-8 col-12 content" style="min-width: 550px;">
+            <div class="title p-3">
+                <div class="mb-2">
+                    <span class="badge badge-pill badge-light"><i class="fa fa-info text-primary"></i></span>
+                    <span>Plans includes the various types of insurance/insurance related products that your client have
+                        currently</span>
+                </div>
+                <div class="mb-2">
+                    <span class="badge badge-pill badge-light"><i class="fa fa-info text-primary"></i></span>
+                    <span>For plans with multiple life assured, the priority of the life assured used to determine the
+                        start
+                        age is Policy Owner, Spouse followed by the first dependant entered.</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 left">
+                    <div class="py-5 px-2   ">
+                        <label for="assured"><b>Life Assured</b> <small><i>(required)</i></small></label>
+                        <div class="dropdown w-100" id="assured">
+                            <button type="button" class="btn form-control text-left border-secondary"></button>
+                            <div class="dropdown-menu w-100">
+                                <a class="dropdown-item" id="link_1" href="#">Link 1</a>
+                                <a class="dropdown-item" id="link_2" href="#">Link 2</a>
+                                <a class="dropdown-item" id="link_3" href="#">Link 3</a>
+                            </div>
+                            <span class="caret"><i class="fa fa-caret-down text-secondary"></i></span>
+                        </div>
+                        <p class="text-secondary my-2"><i>You need to add your dependents in the wizard for them to
+                                appear in the dropdown.</i></p>
+                        <div class="row">
+                            <div class="col-6">
+                                <label><b>Existing Plan Type</b><small><i>(required)</i></small></label>
+                                <div class="dropdown" id="plan_type">
+                                    <button type="button" class="btn form-control text-left border-secondary">Term
+                                        Life</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" id="link_1" href="#">Link 1</a>
+                                        <a class="dropdown-item" id="link_2" href="#">Term Life</a>
+                                        <a class="dropdown-item" id="link_3" href="#">Link 3</a>
+                                    </div>
+                                    <span class="caret"><i class="fa fa-caret-down text-secondary"></i></span>
+                                </div>
+                            </div>
+                            <div class="pl-2 d-flex col-6">
+                                <div class="pl-2">
+                                    <label><b>Start Age</b></label>
+                                    <input type="text" class="form-control border-secondary">
+                                    <p class="text-secondary"><small><i>Cecils'age</i></small></p>
+                                </div>
+                                <div class="pl-2">
+                                    <label><b>End Age</b></label>
+                                    <input type="text" class="form-control border-secondary">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row px-3">
+                            <label><b>Existing Plan Name</b><small><i>(required)</i></small></label>
+                            <input type="text" class="form-control border-secondary">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="pt-5">
+                        <label class="px-3"><b>Company Name</b></label>
+                        <div class="container-fluid d-flex justify-content-center">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text google border-secondary">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control border-secondary bl-none">
+                            </div>
+                        </div>
+                        <p class="text-secondary m-2 px-2"><i>You can type in the name of the insurance company if it's
+                                not in the list.</i></p>
+                    </div>
+                    <div class="px-3">
+                        <label class=""><b>Policy Number</b></label>
+                        <input type="text" class="form-control border-secondary">
+                    </div>
+                    <div class="row pt-3 px-3">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label class=""><b>Start Date</b></label>
+                                <div class="datepicker mb-0 date input-group p-0 shadow-sm">
+                                    <input type="text" placeholder="DD/MM/YYYY" class="form-control"
+                                        id="reservationDate">
+                                    <div class="input-group-append"><span class="input-group-text"><i
+                                                class="fa fa-clock-o"></i></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label class=""><b>Maturity Date</b></label>
+                                <div class="datepicker mb-0 date input-group p-0 shadow-sm">
+                                    <input type="text" placeholder="DD/MM/YYYY" class="form-control"
+                                        id="reservationDate">
+                                    <div class="input-group-append"><span class="input-group-text"><i
+                                                class="fa fa-clock-o"></i></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-3 pt-2">
+                        <label class=""><b>Remakes</b></label>
+                        <textarea class="w-100 border-secondary rounded p-2" rows="5"></textarea>
+                        <p class="text-secondary"><i>You can fill in other details like riders name, riders
+                                premiums, start date of ISP riders if it differs from main plan etc. The remarks will
+                                appear in the policy Summary Report.</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-body">
+                    <ul class="nav nav-tabs nav-underline" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link tab-menu active" id="baseIcon-tab21" data-toggle="tab" aria-controls="tabIcon21"
+                                href="#tabIcon21" role="tab" aria-selected="false">
+                                <span class="font-weight-bold"><i class="fa fa-file-text px-2"></i>Premium Details</span> 
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab-menu" id="baseIcon-tab22" data-toggle="tab" aria-controls="tabIcon22"
+                                href="#tabIcon22" role="tab" aria-selected="true">
+                                <span class="font-weight-bold"><i class="fas fa-wheelchair px-2"></i>Insurance Benefits</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab-menu" id="baseIcon-tab22" data-toggle="tab" aria-controls="tabIcon22"
+                                href="#tabIcon23" role="tab" aria-selected="true">
+                                <span class="font-weight-bold"><i class="fa fa-clock-o px-2"></i>Cash/Maturity Benefits</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content px-1 pt-1">
+                        <div class="tab-pane active" id="tabIcon21" role="tabpanel" aria-labelledby="baseIcon-tab21">                            
+                            <table id="premium" class="table table-hover w-100">
+                                <colgroup>
+                                    <col style="width: 16%">
+                                    <col style="width: 15%">
+                                    <col style="width: 15%">
+                                    <col style="width: 22%">
+                                    <col style="width: 10%">
+                                    <col style="width: 22%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>Description</th>
+                                        <th>Premium Amount</th>
+                                        <th>Annual Increment</th>
+                                        <th>Premium Mode/Account</th>
+                                        <th>Frequency</th>
+                                        <th>Premium Age</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Premium </td>
+                                        <td>$2,000.00</td>
+                                        <td> 0% </td>
+                                        <td> Cash </td>
+                                        <td>Annually</td>
+                                        <td>31 to 65<span class="more"><i class="text-right fa fa-ellipsis-v"></i></span></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="text-center">
+                                        <td colspan="2"><span class="new" data-toggle="modal" data-target="#new_premiums"><i class="fa fa-plus px-2"></i>Add New Premium </span></td>
+                                        <td colspan="2"><i class="fa fa-outdent px-2"></i>Add Multiple Premiums</td>
+                                        <td colspan="2" class="text-danger"><i class="fa fa-trash px-2"></i> Delete Multiple Premium </td>
+                                    </tr>
+
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="tab-pane" id="tabIcon22" role="tabpanel" aria-labelledby="baseIcon-tab22">                            
+                            <table id="insurance" class="table table-hover w-100">
+                                <colgroup>
+                                    <col style="width: 30%">
+                                    <col style="width: 15%">
+                                    <col style="width: 20%">
+                                    <col style="width: 15%">
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>Insurance Benefit</th>
+                                        <th>Coverage</th>
+                                        <th>Payment Mode/Type</th>
+                                        <th>Amount</th>
+                                        <th>Coverage Type</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Advance Stage Critical illness </td>
+                                        <td>31 to 99</td>
+                                        <td> One time (Cash) </td>
+                                        <td> $750,000 </td>
+                                        <td> Level <span class="more"><i class="text-right fa fa-ellipsis-v"></i></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Early Stage Critical illness </td>
+                                        <td>31 to 99</td>
+                                        <td> One time (Cash) </td>
+                                        <td> $250,000 </td>
+                                        <td> Level <span class="more"><i class="text-right fa fa-ellipsis-v"></i></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Permanent Disability (TPD) </td>
+                                        <td>31 to 99</td>
+                                        <td> One time (Cash) </td>
+                                        <td> $1M </td>
+                                        <td> Level <span class="more"><i class="text-right fa fa-ellipsis-v"></i></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Death </td>
+                                        <td>31 to 99</td>
+                                        <td> One time (Cash) </td>
+                                        <td> $1M </td>
+                                        <td> Level <span class="more"><i class="text-right fa fa-ellipsis-v"></i></span></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="text-center">
+                                        <td colspan="2"><span class="new" data-toggle="modal" data-target="#new_premiums"><i class="fa fa-plus px-2"></i>Add New Premium </span></td>
+                                        <td colspan="2"><i class="fa fa-outdent px-2"></i>Add Multiple Premiums</td>
+                                        <td colspan="2" class="text-danger"><i class="fa fa-trash px-2"></i> Delete Multiple Premium </td>
+                                    </tr>
+
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="tab-pane" id="tabIcon23" role="tabpanel" aria-labelledby="baseIcon-tab23">                            
+                            <table id="table" class="table table-hover w-100">
+                                <colgroup>
+                                    <col style="width: 16%">
+                                    <col style="width: 20%">
+                                    <col style="width: 12%">
+                                    <col style="width: 12%">
+                                    <col style="width: 12%">
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>Frequency</th>
+                                        <th>Payout Mode/Account</th>
+                                        <th>Pay Amount</th>
+                                        <th>Growth Rate</th>
+                                        <th> Payout Age </th>
+                                        <th>Auto payout maturity benefit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>One time </td>
+                                        <td>Cash</td>
+                                        <td> $200,000 </td>
+                                        <td> - </td>
+                                        <td>65</td>
+                                        <td>Yes<span class="more"><i class="text-right fa fa-ellipsis-v"></i></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Monthly </td>
+                                        <td>Cash</td>
+                                        <td> $1,000,000 </td>
+                                        <td> - </td>
+                                        <td>65 to 80</td>
+                                        <td>Yes<span class="more"><i class="text-right fa fa-ellipsis-v"></i></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Annually </td>
+                                        <td>Cash</td>
+                                        <td> $12,000 </td>
+                                        <td> - </td>
+                                        <td>65 - 80 </td>
+                                        <td>Yes<span class="more"><i class="text-right fa fa-ellipsis-v"></i></span></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="text-center">
+                                        <td colspan="2"><span class="new" data-toggle="modal" data-target="#new_premiums"><i class="fa fa-plus px-2"></i>Add New Premium </span></td>
+                                        <td colspan="2"><i class="fa fa-outdent px-2"></i>Add Multiple Premiums</td>
+                                        <td colspan="2" class="text-danger"><i class="fa fa-trash px-2"></i> Delete Multiple Premium </td>
+                                    </tr>
+
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="new_premiums">
+                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">New Premium</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body p-0">
+                            <div class="info p-3 mb-4">
+                                <span class="badge badge-pill badge-light"><i
+                                        class="fa fa-info text-primary"></i></span>&nbsp;&nbsp;
+                                <span>Plans includes the various types of insurance/insurance related products that your client
+                                    have
+                                    currently</span>
+                            </div>
+                            <div class="p-4">
+                                <form name="new_Premium">
+                                    <div class="form-group">
+                                        <label class="label-control" for="description">Description</label>
+                                        <input type="text" class="form-control" name="description" id="description"
+                                            placeholder="Premium">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="amount">Premium Amount</label>
+                                        <input type="text" class="form-control" name="amount" id="amount"
+                                            placeholder="Premium Amount">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="annual">Annual Increment</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label for="startAge">Start Age</label>
+                                                <input type="number" class="form-control" name="startage" id="startage" value="31">
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="endAge">End Age</label>
+                                                <input type="number" class="form-control" name="endAge" id="endAge" value="99">
+        
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-4">
+                                        <label>Frequency</label><br>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">One Time</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">Monthly</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">Qyarterly</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">Semi-annually</button>
+                                            <button type="button" class="btn btn-primary btn-sm">Annual</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-4">
+                                        <label>Payment Mode</label><br>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-primary btn-sm">Cash</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">CPF</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">SRS</button>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between">
+                                        <a href="javascript: void(0)"><i class="fa fa-desktop"></i>&nbsp;&nbsp;Guide Me</a>
+                                        <div class="form-group">
+                                            <button type="button" class="btn btn-secondary btn-sm mx-1">Cancel</button>
+                                            <button type="button" class="btn btn-primary btn-sm mx-1">Save Premium</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 col-0"></div>
+</body>
+
+</html>     

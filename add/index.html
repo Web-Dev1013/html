@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title> Add/Edit </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script> -->
+    <!-- <script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script> -->
+    <script src="./datatable.jquery.js"></script>
+    <script src="./datatable.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</header>
+
+<body>
+    <div class="row">
+        <div class="col-md-2 col-0"></div>
+        <div class="col-md-8 col-12 card-body">
+            <ul class="nav nav-tabs nav-underline" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link tab-menu" id="baseIcon-tab21" data-toggle="tab" aria-controls="tabIcon21"
+                        href="#tabIcon21" role="tab" aria-selected="false">
+                        <span><i class="fas fa-house-user fa-2x py-2"></i></span> <span class="px-2">Assets
+                            <br>$84,682</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link tab-menu" id="baseIcon-tab22" data-toggle="tab" aria-controls="tabIcon22"
+                        href="#tabIcon22" role="tab" aria-selected="true">
+                        <span><i class="fa fa-bar-chart fa-2x py-2"></i></span><span class="px-2">Investments <br>
+                            $22,200</a></span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link tab-menu" id="baseIcon-tab21" data-toggle="tab" aria-controls="tabIcon21"
+                        href="#tabIcon23" role="tab" aria-selected="false">
+                        <span><i class="fas fa-tv fa-2x py-2"></i></span><span class="px-2"> Liabilities<br>
+                            $50,000</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link tab-menu" id="baseIcon-tab22" data-toggle="tab" aria-controls="tabIcon22"
+                        href="#tabIcon24" role="tab" aria-selected="true">
+                        <span><i class="fas fa-money-bill-alt fa-2x py-2"></i></span><span class="px-2"> Income<br>
+                            $63,600</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link tab-menu active" id="baseIcon-tab23" data-toggle="tab" aria-controls="tabIcon23"
+                        href="#tabIcon25" role="tab" aria-selected="false">
+                        <span><i class="fa fa-umbrella fa-2x py-2"></i></span><span class="p-2"> Insurances</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link tab-menu" id="baseIcon-tab23" data-toggle="tab" aria-controls="tabIcon23"
+                        href="#tabIcon26" role="tab" aria-selected="false">
+                        <span><i class="fa fa-file-text fa-2x py-2"></i></span><span class="px-2"> Expenses <br>$50,
+                            033</span></a>
+                </li>
+            </ul>
+            <div class="tab-content px-1 pt-1">
+                <div class="tab-pane" id="tabIcon21" role="tabpanel" aria-labelledby="baseIcon-tab21">
+                    <p>Assets</p>
+                </div>
+                <div class="tab-pane" id="tabIcon22" role="tabpanel" aria-labelledby="baseIcon-tab22">
+                    <p>Investments</p>
+                </div>
+                <div class="tab-pane" id="tabIcon23" role="tabpanel" aria-labelledby="baseIcon-tab23">
+                    <p>Liabilities</p>
+                </div>
+                <div class="tab-pane" id="tabIcon24" role="tabpanel" aria-labelledby="baseIcon-tab21">
+                    <p>Income</p>
+                </div>
+                <div class="tab-pane active" id="tabIcon25" role="tabpanel" aria-labelledby="baseIcon-tab22">
+                    <div class="p-3">
+                        <div class="pt-4">
+                            <div class="row tab-menu justify-content-center align-items-center">
+                                <div class="col-md-12">
+                                    <div class="form">
+                                        <i class="fa fa-search"></i>
+                                        <input type="text" class="form-control form-input"
+                                            placeholder="Enter search text">
+                                    </div>
+                                    <div class="mt-5">
+                                        <table id="table" class="table table-hover w-100">
+                                            <colgroup>
+                                                <col style="width: 18%">
+                                                <col style="width: 14%">
+                                                <col style="width: 20%">
+                                                <col style="width: 25%">
+                                                <col style="width: 23%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>Plan/Type/Company</th>
+                                                    <th>Life Assured</th>
+                                                    <th>Premiums</th>
+                                                    <th>Insurance Benefit</th>
+                                                    <th>Cash/Maturity Benefit</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p class="font-weight-bold">aia plan</p>
+                                                        <p>Whole Life | AIA</p>
+                                                        <p>1234512345</p>
+                                                    </td>
+                                                    <td>Erwin</td>
+                                                    <td>
+                                                        <p>Cash $2,000.00 Annually<span class="badge badge-primary badge-pill ml-2">
+                                                            <i class="fa fa-info"></i></span>
+                                                        </P>
+                                                    </td>
+                                                    <td>
+                                                        <span class="pr-5"><i
+                                                                class="fa fa-bed text-primary pr-1"></i>$100,000</span>
+                                                        <span><i
+                                                                class="fas fa-wheelchair text-primary pr-1"></i>$100,000</span><br>
+                                                        <span class="pr-5"><i
+                                                                class="fas fa-wave-square text-primary pr-1"></i>$100,000</span>
+                                                        <span><i
+                                                                class="fas fa-heartbeat text-primary pr-1"></i>$100,000</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="">
+                                                            <span>Cash $10,000 Annually
+                                                                <span class="badge badge-primary badge-pill mx-3"><i
+                                                                        class="fa fa-info"></i></span>
+                                                            </span>
+                                                            <span class="more"><i
+                                                                    class="fa fa-ellipsis-v text-right"></i></span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="font-weight-bold">DPS</p>
+                                                        <p>DPS | NTUC Income</p>
+                                                    </td>
+                                                    <td>Erwin</td>
+                                                    <td>
+                                                        <p>View DPS Premiums Table <i class="fa fa fa-sliders"></i></p>
+                                                    </td>
+                                                    <td>
+                                                        <span class="pr-5"><i
+                                                                class="fa fa-bed text-primary pr-3"></i>$100,000</span>
+                                                        <span><i
+                                                                class="fas fa-wheelchair text-primary pr-2"></i>$100,000</span><br>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-minus"></i>
+                                                        <span class="more"><i
+                                                                class="fa fa-ellipsis-v text-right"></i></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="font-weight-bold">Careshieldlife</p>
+                                                        <p>Long-term Care | CPF</p>
+                                                    </td>
+                                                    <td>Erwin</td>
+                                                    <td>
+                                                        <p>Cash $150.00 Annually
+                                                        <span class="badge badge-primary badge-pill ml-2"><i
+                                                                class="fa fa-info"></i></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fab fa-accessible-icon text-primary"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-minus"></i>
+                                                        <span class="more"><i
+                                                                class="fa fa-ellipsis-v text-right"></i></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="font-weight-bold">RUshield Plus</p>
+                                                        <p>(PRUextra Plus CoPay)</p>
+                                                        <p>Medishield Life/ISP | Prudential</p>
+                                                    </td>
+                                                    <td>Erwin</td>
+                                                    <td>
+                                                        View Medishield Life/ISP Premium Table <i
+                                                            class="fa fa-sliders"></i>
+                                                    </td>
+                                                    <td>
+
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-minus"></i>
+                                                        <span class="more"><i
+                                                                class="fa fa-ellipsis-v text-right"></i></span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr class="text-center">
+                                                    <td colspan="3" class="py-4"><i class="fa fa-outdent px-2"></i>Add New Insurance
+                                                        Plan</td>
+                                                    <td colspan="2" class="text-danger py-4"><i class="fa fa-trash px-2"></i>
+                                                        Delete Multiple Insurance Plans </td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabIcon26" role="tabpanel" aria-labelledby="baseIcon-tab23">
+                    <p>Expenses</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2 col-0"></div>
+</body>
+
+</html>

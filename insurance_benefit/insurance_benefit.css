@@ -1,0 +1,25 @@
+.modal-header {
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+button.close {
+    color: white !important;
+}
+.info {
+    background-color: lightblue !important;
+}
+
+.modal-dialog {
+    width: 80% !important;
+}
+table th {
+    font-size: smaller !important;
+    text-align: center !important;
+}
+table td {
+    font-size: smaller !important;
+}
+table {
+    border-top: none !important;
+}

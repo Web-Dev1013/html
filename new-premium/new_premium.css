@@ -1,0 +1,11 @@
+.modal-header {
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+button.close {
+    color: white !important;
+}
+.info {
+    background-color: lightblue !important;
+}
